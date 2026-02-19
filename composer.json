@@ -1,0 +1,22 @@
+{
+    "name": "nplesa/infinitygrid",
+    "description": "Professional Livewire 3 DataGrid for Laravel",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "nplesa\\InfinityGrid\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "livewire/livewire": "^3.0",
+        "laravel/framework": "^10|^11|^12"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "nplesa\\InfinityGrid\\InfinityGridServiceProvider"
+            ]
+        }
+    }
+}
