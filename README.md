@@ -1,6 +1,6 @@
 # nplesa/infinitygrid
 
-Professional DataGrid pentru Laravel 10+, cu Bootstrap 5 și jQuery.  
+Infinity grid pentru Laravel 10+, cu Bootstrap 5 și jQuery.  
 Suportă: search global, filtre pe coloane, sortare, paginare Livewire, bulk delete și configurare dinamică a coloanelor.
 
 ## Instalare
