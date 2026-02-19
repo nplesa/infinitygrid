@@ -11,12 +11,16 @@ php artisan vendor:publish --provider="nplesa\InfinityGrid\InfinityGridServicePr
 
 ## Folosire
 
+```blade
 <livewire:infinity-datagrid 
     :model="App\Models\User::class" 
     :columns="[
         Column::make('id','ID')->sortable(),
         Column::make('name','Name')->sortable(),
         Column::make('email','Email')->sortable(),
-        Column::make('role','Role')->filter(['type'=>'select','options'=>['Admin','Editor','User']])
-    ]"/>
-
+        Column::make('role','Role')->filter([
+            'type'=>'select',
+            'options'=>['Admin','Editor','User']
+        ])
+    ]"
+/>
