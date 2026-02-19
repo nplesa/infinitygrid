@@ -10,6 +10,7 @@ php artisan vendor:publish --provider="nplesa\InfinityGrid\InfinityGridServicePr
 php artisan vendor:publish --provider="nplesa\InfinityGrid\InfinityGridServiceProvider" --tag=views
 
 ## Folosire
+<pre>
 <livewire:infinity-datagrid 
     :model="App\Models\User::class" 
     :columns="[
@@ -18,3 +19,4 @@ php artisan vendor:publish --provider="nplesa\InfinityGrid\InfinityGridServicePr
         Column::make('email','Email')->sortable(),
         Column::make('role','Role')->filter(['type'=>'select','options'=>['Admin','Editor','User']])
     ]"/>
+</pre>
