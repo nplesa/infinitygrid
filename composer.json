@@ -1,6 +1,6 @@
 {
     "name": "nplesa/infinitygrid",
-    "description": "Professional Livewire 3 DataGrid for Laravel",
+    "description": "Infinity grid for Laravel",
     "type": "library",
      "license": "MIT",
     "autoload": {
