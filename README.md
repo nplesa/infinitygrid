@@ -23,6 +23,6 @@ php artisan vendor:publish --provider="nplesa\InfinityGrid\InfinityGridServicePr
 
 @section('content')
     {{-- include grid container from package --}}
-    @include('infinitygrid::grid')
+    @include('infinity::grid')
 @endsection
 ```
