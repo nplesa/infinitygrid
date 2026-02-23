@@ -1,5 +1,5 @@
 {{-- Container pentru InfinityGrid --}}
-<div id="infinity-grid"></div>
+<div id="infinity"></div>
 
 {{-- Include CSS și JS din pachet --}}
 <link rel="stylesheet" href="{{ asset('vendor/nplesa/infinitygrid/css/infinitygrid.css') }}">

@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     if (typeof InfinityGrid !== "undefined") {
         InfinityGrid.init({
-            el: "#infinity-grid",
+            el: "#infinity",
             columns: [
                 { field: "id", title: "ID" },
                 { field: "name", title: "Name" }
