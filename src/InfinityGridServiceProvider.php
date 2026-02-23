@@ -19,11 +19,12 @@ class InfinityGridServiceProvider extends ServiceProvider
 
         // Publicare JS, CSS și images
         $this->publishes([
-            __DIR__.'/resources/js'     => public_path('vendor/nplesa/infinitygrid/js'),
-            __DIR__.'/resources/css'    => public_path('vendor/nplesa/infinitygrid/css'),
-            __DIR__.'/resources/images' => public_path('vendor/nplesa/infinitygrid/images'),
+            __DIR__.'/resources/assets/js'     => public_path('vendor/nplesa/infinitygrid/js'),
+            __DIR__.'/resources/assets/css'    => public_path('vendor/nplesa/infinitygrid/css'),
+            __DIR__.'/resources/images'        => public_path('vendor/nplesa/infinitygrid/images'),
         ], 'assets');
 
+        // Publicare views
         $this->publishes([
             __DIR__.'/resources/views' => resource_path('views/vendor/infinitygrid'),
         ], 'views');
@@ -40,7 +41,6 @@ class InfinityGridServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        // Înregistrare singleton GridEngine pentru dependency injection
         $this->app->singleton('grid.engine', function () {
             return new GridEngine();
         });
