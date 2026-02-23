@@ -1,22 +1,28 @@
 # nplesa/infinitygrid
 
-Infinity grid pentru Laravel 10+, cu Bootstrap 5 și jQuery.  
-Suportă: search global, filtre pe coloane, sortare, paginare Livewire, bulk delete și configurare dinamică a coloanelor.
+Infinity grid for Laravel 10+, with Bootstrap 5 and jQuery.  
+Support: search global, columns filters, sort, pagination and dynamic column configuration.
 
-## Instalare
+## Instalation
 ```
 composer require nplesa/infinitygrid
-php artisan vendor:publish --provider="nplesa\InfinityGrid\InfinityGridServiceProvider" --tag=config
+
+# Publicare JS, CSS, images
 php artisan vendor:publish --provider="nplesa\InfinityGrid\InfinityGridServiceProvider" --tag=assets
+
+# Publicare config
+php artisan vendor:publish --provider="nplesa\InfinityGrid\InfinityGridServiceProvider" --tag=config
+
+# Publicare views
 php artisan vendor:publish --provider="nplesa\InfinityGrid\InfinityGridServiceProvider" --tag=views
 ```
-## Folosire
+## Using
 
 ```blade
 @extends('layouts.app')
 
 @section('content')
-    {{-- Include containerul grid-ului din package --}}
+    {{-- include grid container from package --}}
     @include('infinitygrid::grid')
 @endsection
 ```
