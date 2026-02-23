@@ -14,25 +14,25 @@ class InfinityGridServiceProvider extends ServiceProvider
     {
         // Publicare config
         $this->publishes([
-            __DIR__.'/../config/infinitygrid.php' => config_path('infinitygrid.php'),
+            __DIR__.'/config/infinitygrid.php' => config_path('infinitygrid.php'),
         ], 'config');
 
         // Publicare JS, CSS și images
         $this->publishes([
-            __DIR__.'/../resources/js'     => public_path('vendor/nplesa/infinitygrid/js'),
-            __DIR__.'/../resources/css'    => public_path('vendor/nplesa/infinitygrid/css'),
-            __DIR__.'/../resources/images' => public_path('vendor/nplesa/infinitygrid/images'),
+            __DIR__.'/resources/js'     => public_path('vendor/nplesa/infinitygrid/js'),
+            __DIR__.'/resources/css'    => public_path('vendor/nplesa/infinitygrid/css'),
+            __DIR__.'/resources/images' => public_path('vendor/nplesa/infinitygrid/images'),
         ], 'assets');
 
         $this->publishes([
-            __DIR__.'/../resources/views' => resource_path('views/vendor/infinitygrid'),
+            __DIR__.'/resources/views' => resource_path('views/vendor/infinitygrid'),
         ], 'views');
 
         // Încarcă rutele package-ului
         $this->loadRoutesFrom(__DIR__.'/routes/web.php');
 
         // Încarcă view-urile package-ului cu namespace
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'infinitygrid');
+        $this->loadViewsFrom(__DIR__.'/resources/views', 'infinitygrid');
     }
 
     /**
