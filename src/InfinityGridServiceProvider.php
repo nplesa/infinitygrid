@@ -17,7 +17,7 @@ class InfinityGridServiceProvider extends ServiceProvider
         // ----------------------------
         // Fișierul config se află în src/config
         $this->publishes([
-            __DIR__.'/config/infinitygrid.php' => config_path('infinitygrid.php'),
+            __DIR__.'/config/infinity.php' => config_path('infinity.php'),
         ], 'config');
 
         // ----------------------------
