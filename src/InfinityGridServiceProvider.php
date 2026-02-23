@@ -29,7 +29,7 @@ class InfinityGridServiceProvider extends ServiceProvider
         ], 'views');
 
         // Încarcă rutele package-ului
-        $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
+        $this->loadRoutesFrom(__DIR__.'/routes/web.php');
 
         // Încarcă view-urile package-ului cu namespace
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'infinitygrid');
