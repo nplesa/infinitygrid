@@ -7,13 +7,13 @@ Support: search global, columns filters, sort, pagination and dynamic column con
 ```
 composer require nplesa/infinitygrid
 
-# Publicare JS, CSS, images
+# Publish JS, CSS, images
 php artisan vendor:publish --provider="nplesa\InfinityGrid\InfinityGridServiceProvider" --tag=assets
 
-# Publicare config
+# Publish config
 php artisan vendor:publish --provider="nplesa\InfinityGrid\InfinityGridServiceProvider" --tag=config
 
-# Publicare views
+# Publish views
 php artisan vendor:publish --provider="nplesa\InfinityGrid\InfinityGridServiceProvider" --tag=views
 ```
 ## Using
